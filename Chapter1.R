@@ -69,4 +69,4 @@ roll2(bones=1:4)
 roll2(bones=1:6)
 roll2(1:20)
 
-# to run it, input "roll2()". a random number will result ech time, as if you were rolling a die. 
+## to run it, input "roll2()". a random number will result ech time, as if you were rolling a die. 
