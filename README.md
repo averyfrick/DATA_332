@@ -12,4 +12,5 @@
 ![CostPerMajor](https://github.com/averyfrick/DATA_332/assets/159860783/d26844f8-21fa-4c1b-b232-2a9e73edcff4)
 
 ## Total Balance by Major 
+### When there is a large balance there is a large amount of students that have payment plans. 
 ![TotalBalanceByMajor](https://github.com/averyfrick/DATA_332/assets/159860783/765d3e58-3533-4695-bcc6-950d6bbb0164)
