@@ -8,6 +8,7 @@
 ![BirthYearStudent](https://github.com/averyfrick/DATA_332/assets/159860783/db9a53c6-511a-41a6-8381-e6e2d96dfc1c)
 
 ## Total Cost per Major 
+### Data Science is the most expensive major. There is more people without payment plans for all majors.  
 ![CostPerMajor](https://github.com/averyfrick/DATA_332/assets/159860783/d26844f8-21fa-4c1b-b232-2a9e73edcff4)
 
 ## Total Balance by Major 
