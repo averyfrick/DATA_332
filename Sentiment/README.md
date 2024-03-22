@@ -2,20 +2,26 @@
 
 I had a very hard time at the beggining of the project. I was trying too hard to copy the code from the class exmaple instead of thinking about what needed to be done. I also was focused on the big picture instead of one step at a time. 
 
+
 The following code I kept trying to change and put my own word in replace of joy...
+
 joy sentiments 
 nrc_joy <- get_sentiments("nrc") %>%
   filter(sentiment=="joy")
+
 
 Once I picked one bank to focus on it solved a lot of errors and got me rolling...
 citibank <- tidy_complaints %>%
   filter(Company== "Citibank")
 
+
 A major roadblock I had was there being a many to many relationship when I was trying to join data. By getting the above (nrc_joy and picking citibank) I was able to join without there being an error. 
+
 tidy_complaints%>%
   filter(Company == "Citibank") %>%
   inner_join(nrc_joy)%>%
   count(word, sort=TRUE)
+
 
 Once I got through these problems I was confident creating the charts, plotting, and saving. 
 
