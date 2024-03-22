@@ -11,6 +11,7 @@ nrc_joy <- get_sentiments("nrc") %>%
 
 
 Once I picked one bank to focus on it solved a lot of errors and got me rolling...
+
 citibank <- tidy_complaints %>%
   filter(Company== "Citibank")
 
