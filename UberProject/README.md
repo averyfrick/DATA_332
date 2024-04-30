@@ -2,7 +2,7 @@
 ## Link to shiny app 
 
 ## Code Snipets
-
+### Trips by Hour and Month 
 ```
 ggplot(trips_by_hour, aes(x = Hour, y = trips_count, fill = Month)) +
   geom_bar(stat = "identity", position = "dodge") +
