@@ -1,5 +1,5 @@
-# Uber Project 
-## Link to shiny app 
+# Uber Project - Avery Frick
+## Link to shiny app -- (INSERT HERE)
 
 ## Code Snipets
 ### Trips by Hour and Month 
