@@ -101,6 +101,10 @@ ggplot(trips_by_hour_day, aes(x = Hour, y = Day_of_the_month, fill = trips_count
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+[hourandDayheatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190683/hourandDayheatmap.pdf)
+
+
+
 ### Month and Week 
 ```
 heat_day_month <- uber_data %>%
@@ -116,6 +120,10 @@ ggplot(heat_day_month, aes(x = Month, y = Day_of_the_month, fill = trips_count))
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+[baseandMonthHeatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190689/baseandMonthHeatmap.pdf)
+
+
 ### Month and Day of Week 
 ```
 heat_month_week <- uber_data %>%
@@ -131,6 +139,10 @@ ggplot(heat_month_week, aes(x = Week, y = Month, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+[monthandWeekheatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190687/monthandWeekheatmap.pdf)
+
+
+
 ### Base and Day of Week 
 ```
 base_heat<- uber_data %>%
@@ -145,3 +157,4 @@ ggplot(base_heat, aes(x = Base, y = Day_of_Week, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+[baseandDOW.pdf](https://github.com/averyfrick/DATA_332/files/15190674/baseandDOW.pdf)
