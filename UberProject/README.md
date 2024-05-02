@@ -157,4 +157,4 @@ ggplot(base_heat, aes(x = Base, y = Day_of_Week, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
-[baseandDOW.pdf](https://github.com/averyfrick/DATA_332/files/15190674/baseandDOW.pdf)
+[baseandDOW.pdf](https://github.com/averyfrick/DATA_332/files/15190674/baseandDOW.pdf) 
