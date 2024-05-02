@@ -1,7 +1,7 @@
 # Uber Project - Avery Frick
 ## Link to shiny app -- (INSERT HERE)
 
-## Code Snipets
+## Code Snipets and Images of Plots
 ### Trips by Hour and Month 
 ```
 ggplot(trips_by_hour, aes(x = Hour, y = trips_count, fill = Month)) +
