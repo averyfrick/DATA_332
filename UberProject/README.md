@@ -85,6 +85,9 @@ ggplot(trips_by_base, aes(x = Base, y = trips_count, fill = Month)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+![basemonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/deab003f-01a4-4118-9a23-5ab2903101ad)
+
+
 ## Heatmaps 
 ### Hour and Day 
 ```
@@ -101,7 +104,8 @@ ggplot(trips_by_hour_day, aes(x = Hour, y = Day_of_the_month, fill = trips_count
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
-[hourandDayheatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190683/hourandDayheatmap.pdf)
+
+[heatmaphourday.pdf](https://github.com/averyfrick/DATA_332/files/15190747/heatmaphourday.pdf)
 
 
 
@@ -120,8 +124,8 @@ ggplot(heat_day_month, aes(x = Month, y = Day_of_the_month, fill = trips_count))
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+[heatmapmonthweek.pdf](https://github.com/averyfrick/DATA_332/files/15190745/heatmapmonthweek.pdf)
 
-[baseandMonthHeatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190689/baseandMonthHeatmap.pdf)
 
 
 ### Month and Day of Week 
@@ -139,7 +143,9 @@ ggplot(heat_month_week, aes(x = Week, y = Month, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
-[monthandWeekheatmap.pdf](https://github.com/averyfrick/DATA_332/files/15190687/monthandWeekheatmap.pdf)
+
+[heatmapbaseday.pdf](https://github.com/averyfrick/DATA_332/files/15190742/heatmapbaseday.pdf)
+
 
 
 
@@ -157,4 +163,5 @@ ggplot(base_heat, aes(x = Base, y = Day_of_Week, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
-[baseandDOW.pdf](https://github.com/averyfrick/DATA_332/files/15190674/baseandDOW.pdf) 
+
+[heatmapbaseday.pdf](https://github.com/averyfrick/DATA_332/files/15190731/heatmapbaseday.pdf)
