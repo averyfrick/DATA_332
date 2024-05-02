@@ -12,7 +12,10 @@ ggplot(trips_by_hour, aes(x = Hour, y = trips_count, fill = Month)) +
        fill = "Month") +
   theme_minimal()
 
-``` 
+```
+![hourmonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/b2bbb4dc-93bd-4d64-bb50-c4a4d2d16210)
+
+
 ### Trips By Hour 
 ```
 ggplot(trips_by_hour, aes(x = Hour, y = trips_count)) +
@@ -23,6 +26,9 @@ ggplot(trips_by_hour, aes(x = Hour, y = trips_count)) +
   theme_minimal()
 
 ```
+![tripshourchart](https://github.com/averyfrick/DATA_332/assets/159860783/a26376f9-8b16-494b-bf2e-924f3c9c3418)
+
+
 ### Trips by Day of the Week and Month 
 ```
 DOW_and_Month <- uber_data %>%
@@ -39,7 +45,10 @@ ggplot(DOW_and_Month, aes(x = Month, y = trips_count, fill = Day_of_Week)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
-### Trips During ebery day of the Month 
+![DOWmonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/3ab3ac76-a3c3-45ef-b861-fd20ec3844ef)
+
+
+### Trips During every day of the Month 
 ```
 uber_data$Day_of_the_month <- day(uber_data$Date)
 
@@ -55,6 +64,9 @@ ggplot(trips_by_day, aes(x = Day_of_the_month, y = trips_count)) +
   theme_minimal()
 
 ```
+![everydaymonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/7b91549e-cc59-4476-b8dd-66da2dd7a7fa)
+
+
 ### Trips Per Day of the Month 
 ```
 ggplot(trips_by_day, aes(x = Day_of_the_month, y = trips_count, fill = Month)) +
@@ -63,6 +75,9 @@ ggplot(trips_by_day, aes(x = Day_of_the_month, y = trips_count, fill = Month)) +
   theme(axis.text = element_text(angle = 45, vjust = .5, hjust = 1))
 
 ```
+![perdaymonthheat](https://github.com/averyfrick/DATA_332/assets/159860783/b83805fb-e746-40a9-b54e-8dc2ba9f0536)
+
+
 ### Trips by Month 
 ```
 ggplot(trips_by_day, aes(x = Month, y = trips_count)) +
@@ -72,6 +87,9 @@ ggplot(trips_by_day, aes(x = Month, y = trips_count)) +
        y = "Number of Trips") +
   theme_minimal()
 ```
+![monthtripschart](https://github.com/averyfrick/DATA_332/assets/159860783/f277e529-878a-4bc4-a7c4-e7598f8e2c51)
+
+
 ### Trips by Bases and Month 
 ```
 trips_by_base <- uber_data %>%
@@ -105,7 +123,8 @@ ggplot(trips_by_hour_day, aes(x = Hour, y = Day_of_the_month, fill = trips_count
 
 ```
 
-[heatmaphourday.pdf](https://github.com/averyfrick/DATA_332/files/15190747/heatmaphourday.pdf)
+
+![hourdayheat](https://github.com/averyfrick/DATA_332/assets/159860783/46be8679-2ada-4d99-91c0-a17be57571b7)
 
 
 
@@ -124,7 +143,8 @@ ggplot(heat_day_month, aes(x = Month, y = Day_of_the_month, fill = trips_count))
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
-[heatmapmonthweek.pdf](https://github.com/averyfrick/DATA_332/files/15190745/heatmapmonthweek.pdf)
+
+![monthweekheat](https://github.com/averyfrick/DATA_332/assets/159860783/738b0755-49b5-473f-9352-c59d753c2148)
 
 
 
@@ -144,7 +164,8 @@ ggplot(heat_month_week, aes(x = Week, y = Month, fill = trips_count)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-[heatmapbaseday.pdf](https://github.com/averyfrick/DATA_332/files/15190742/heatmapbaseday.pdf)
+![basemonthheat](https://github.com/averyfrick/DATA_332/assets/159860783/460dc87b-e8c2-4082-b7ea-c36207b37bbf)
+
 
 
 
@@ -164,4 +185,5 @@ ggplot(base_heat, aes(x = Base, y = Day_of_Week, fill = trips_count)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-[heatmapbaseday.pdf](https://github.com/averyfrick/DATA_332/files/15190731/heatmapbaseday.pdf)
+![basedayheat](https://github.com/averyfrick/DATA_332/assets/159860783/4f59a2a3-c87c-48e2-aee7-bfdf67e9ade6)
+
