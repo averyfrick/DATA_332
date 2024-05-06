@@ -1,6 +1,5 @@
 # Uber Project - Avery Frick
-## Link to shiny app -- (INSERT HERE)
-### Could not get the shiny app published. 
+## Link to shiny app -- (INSERT HERE). Could not get the shiny app published. 
 
 ## Code Snipets and Images of Plots
 ### Trips by Hour and Month 
@@ -14,7 +13,8 @@ ggplot(trips_by_hour, aes(x = Hour, y = trips_count, fill = Month)) +
   theme_minimal()
 
 ```
-![hourmonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/b2bbb4dc-93bd-4d64-bb50-c4a4d2d16210)
+![hourandMonth2](https://github.com/averyfrick/DATA_332/assets/159860783/7889c31a-3f8b-44b9-9705-7c06e07f92a1)
+
 
 
 ### Trips By Hour 
@@ -27,7 +27,8 @@ ggplot(trips_by_hour, aes(x = Hour, y = trips_count)) +
   theme_minimal()
 
 ```
-![tripshourchart](https://github.com/averyfrick/DATA_332/assets/159860783/a26376f9-8b16-494b-bf2e-924f3c9c3418)
+![hourday2](https://github.com/averyfrick/DATA_332/assets/159860783/038399b4-d918-4fa5-a797-8321dd2ed224)
+
 
 
 ### Trips by Day of the Week and Month 
@@ -46,7 +47,8 @@ ggplot(DOW_and_Month, aes(x = Month, y = trips_count, fill = Day_of_Week)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
-![DOWmonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/3ab3ac76-a3c3-45ef-b861-fd20ec3844ef)
+![weekandmonth2](https://github.com/averyfrick/DATA_332/assets/159860783/5a7060bb-779d-4d56-9fe2-93be2c6d792d)
+
 
 
 ### Trips During every day of the Month 
@@ -65,7 +67,8 @@ ggplot(trips_by_day, aes(x = Day_of_the_month, y = trips_count)) +
   theme_minimal()
 
 ```
-![everydaymonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/7b91549e-cc59-4476-b8dd-66da2dd7a7fa)
+![dayandmonth2](https://github.com/averyfrick/DATA_332/assets/159860783/0d9e5349-f414-4b72-af1b-97b54217fb86)
+
 
 
 ### Trips Per Day of the Month 
@@ -76,7 +79,8 @@ ggplot(trips_by_day, aes(x = Day_of_the_month, y = trips_count, fill = Month)) +
   theme(axis.text = element_text(angle = 45, vjust = .5, hjust = 1))
 
 ```
-![perdaymonthheat](https://github.com/averyfrick/DATA_332/assets/159860783/b83805fb-e746-40a9-b54e-8dc2ba9f0536)
+
+![daymonth2](https://github.com/averyfrick/DATA_332/assets/159860783/fe5c301c-c0ec-4962-9068-1c21a91a9891)
 
 
 ### Trips by Month 
@@ -88,8 +92,7 @@ ggplot(trips_by_day, aes(x = Month, y = trips_count)) +
        y = "Number of Trips") +
   theme_minimal()
 ```
-![monthtripschart](https://github.com/averyfrick/DATA_332/assets/159860783/f277e529-878a-4bc4-a7c4-e7598f8e2c51)
-
+![month2](https://github.com/averyfrick/DATA_332/assets/159860783/198bfd70-c783-4eef-befe-cc150091e4f7)
 
 ### Trips by Bases and Month 
 ```
@@ -104,7 +107,7 @@ ggplot(trips_by_base, aes(x = Base, y = trips_count, fill = Month)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
-![basemonthchart](https://github.com/averyfrick/DATA_332/assets/159860783/deab003f-01a4-4118-9a23-5ab2903101ad)
+![basesmonth2](https://github.com/averyfrick/DATA_332/assets/159860783/046c65ba-3e05-4585-8ff0-b07bd0f4ecca)
 
 
 ## Heatmaps 
@@ -125,7 +128,8 @@ ggplot(trips_by_hour_day, aes(x = Hour, y = Day_of_the_month, fill = trips_count
 ```
 
 
-![hourdayheat](https://github.com/averyfrick/DATA_332/assets/159860783/46be8679-2ada-4d99-91c0-a17be57571b7)
+![heathourday2](https://github.com/averyfrick/DATA_332/assets/159860783/8e2e40d8-71c3-46ea-aced-f43f3b8f2e53)
+
 
 
 
@@ -145,7 +149,8 @@ ggplot(heat_day_month, aes(x = Month, y = Day_of_the_month, fill = trips_count))
 
 ```
 
-![monthweekheat](https://github.com/averyfrick/DATA_332/assets/159860783/738b0755-49b5-473f-9352-c59d753c2148)
+![monthweek2](https://github.com/averyfrick/DATA_332/assets/159860783/41a28e43-99e3-4644-b814-8eda7f430251)
+
 
 
 
@@ -165,9 +170,7 @@ ggplot(heat_month_week, aes(x = Week, y = Month, fill = trips_count)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![basemonthheat](https://github.com/averyfrick/DATA_332/assets/159860783/460dc87b-e8c2-4082-b7ea-c36207b37bbf)
-
-
+![basemonth2](https://github.com/averyfrick/DATA_332/assets/159860783/3fcb49ef-89b8-4b32-a85c-533e0d31bbed)
 
 
 
@@ -185,6 +188,6 @@ ggplot(base_heat, aes(x = Base, y = Day_of_Week, fill = trips_count)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+![basedow2](https://github.com/averyfrick/DATA_332/assets/159860783/02629c6b-4929-45c2-870b-6c0b9220b3d3)
 
-![basedayheat](https://github.com/averyfrick/DATA_332/assets/159860783/4f59a2a3-c87c-48e2-aee7-bfdf67e9ade6)
 
